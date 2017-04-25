@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>From:</strong>
+  <%= @transaction.from %>
+</p>
+
+<p>
+  <strong>To:</strong>
+  <%= @transaction.to %>
+</p>
+
+<p>
+  <strong>Kind:</strong>
+  <%= @transaction.kind.capitalize %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @transaction.state.capitalize %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @transaction.amount %>
+</p>
+
+
+<p>
+  <strong>Added:</strong>
+  <%= @transaction.added %>
+</p>
+
+<p>
+  <strong>Confirmed:</strong>
+  <%= @transaction.confirmed %>
+</p>
+
+
+<%= link_to 'Back', account_path(:id => @transaction.user_id) %>

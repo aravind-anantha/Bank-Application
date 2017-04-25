@@ -1,0 +1,25 @@
+<h2>My Friends</h2>
+
+<table class="table table-striped" >
+  <thead>
+  <tr>
+    <th>Name</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% if @friends %>
+    <% @friends.each do |friend| %>
+        <tr>
+          <td><%= friend.fname.capitalize %></td>
+          <td><%= link_to 'Borrow request', new_borrow_path(:user_id => friend.user_id, :friend_id => friend.friend_id ) %></td>
+        </tr>
+    <% end %>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+<p>
+  <%= button_to 'Add Friends', users_path, method: :get, class: "btn btn-primary custom3" %>
+</p>

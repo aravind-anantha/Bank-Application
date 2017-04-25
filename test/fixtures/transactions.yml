@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  from: 1
+  to: 1
+  kind: 1
+  state: 1
+  amount: 9.99
+  user_id: 1
+  added: 2017-02-28 23:41:08
+  confirmed: 2017-02-28 23:41:08
+
+two:
+  from: 1
+  to: 1
+  kind: 1
+  state: 1
+  amount: 9.99
+  user_id: 1
+  added: 2017-02-28 23:41:08
+  confirmed: 2017-02-28 23:41:08
